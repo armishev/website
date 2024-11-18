@@ -1,0 +1,33 @@
+.section-about
+	height: 90vh
+	padding-top: 8rem
+	margin-bottom: 15rem
+
+	@include respond(tab-land)
+		height: 80vh
+
+	@include respond(tab-port)
+		padding: 3rem
+		height: 80vh
+
+	@include respond(phone)
+		padding: 2rem
+		height: 35vh
+		width: 90vw
+	@include respond(miniphone)
+		height: 65vh
+		width: 85%
+
+.list-services
+	margin-top: 10rem
+	padding: 15rem 0
+	background: url(../img/header.jpg) center / cover no-repeat
+	transform: skewY(-3deg)
+	& > *
+		transform: skewY(3deg)
+
+.section-photo
+	padding-top: 15rem
+	margin-bottom: 15rem
+	@include respond(miniphone)
+		margin-bottom: 0

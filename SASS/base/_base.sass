@@ -1,0 +1,25 @@
+*, ::after, ::before
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+html
+	overflow-x: hidden
+	font-size: 62.5%
+	@include respond(tab-land)
+		font-size: 35%
+	@include respond(tab-port)
+		font-size: 35%
+	@include respond(phone)
+		font-size: 20%
+
+body
+	background-color: $color-light-blue
+	padding: 5rem
+	@include respond(phone)
+		padding: 3rem
+
+.container
+	background-color: $color-white
+	position: relative
+	z-index: 0

@@ -1,0 +1,26 @@
+.header
+	position: relative
+	height: 100vh
+	@include respond(tab-land)
+		height: 100vh
+	@include respond(phone)
+		height: 75vh
+	@include respond(miniphone)
+		height: 85vh
+
+	background: url(../img/header.jpg) center / cover no-repeat
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
+	&__logo
+		height: 9rem
+		width: 9rem
+		position: absolute
+		left: 5rem
+		border-radius: 4.2rem
+		top: 5rem
+	&__box
+		position: absolute
+		top: 30vh
+		left: 10vw
+		text-align: left
+		@include respond(phone)
+			top: 20vh

@@ -1,0 +1,49 @@
+.composition
+	position: relative
+
+	@include respond(tab-port)
+		margin-bottom: 35rem
+
+	@include respond(phone)
+		margin-bottom: 40rem
+
+	&__photo
+		width: 60%
+		@include respond(phone)
+			width: 65px
+		@include respond(miniphone)
+			width: 60%
+
+		box-shadow: $box-shadow
+		border-radius: .5rem
+		position: absolute
+		transition: all .4s
+		&_n1
+			top: 0rem
+			left: 0rem
+
+		&_n2
+			top: 5.5rem
+			right: -2rem
+			@include respond(phone)
+				top: 15px
+				left: 35px
+			@include respond(miniphone)
+				left: 75px
+				top: 30px
+
+		&_n3
+			left: 7rem
+			top: 20rem
+			@include respond(phone)
+				left: 20px
+				top: 45px
+			@include respond(miniphone)
+				top: 65px
+				left: 30px
+
+		&:hover
+			-webkit-transform: scale(1.2)
+			z-index: 20
+	&:hover &__photo:not(:hover)
+		-webkit-transform: scale(0.95)

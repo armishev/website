@@ -1,0 +1,20 @@
+.photo-card
+	margin-bottom: 8rem
+	&__img
+		height: 12vw
+		width: 18vw
+		@include respond(tab-port)
+			height: 27vw
+			width: 45vw
+
+		@include respond(phone)
+			height: 27vw
+			width: 45vw
+
+		border-radius: .6rem
+		&_1
+			background: url(../img/photo-card-1.png) center / cover no-repeat
+		&_2
+			background: url(../img/photo-card-2.png) center / cover
+		&_3
+			background: url(../img/photo-card-3.png) center / cover

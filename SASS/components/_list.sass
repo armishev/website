@@ -1,0 +1,25 @@
+.list
+	width: 100%
+	height: auto
+	max-width: 25vw
+	min-width: 25vw
+	box-sizing: border-box
+	@include respond(phone)
+		max-width: 150px
+	@include respond(miniphone)
+		max-width: 60vw
+
+	margin-left: 7vw
+	background: $color-white
+	border-radius: .8rem
+	padding: 4rem
+	&__title
+		font-size: 3.2rem
+		color: #031824
+		padding-bottom: 5%
+		text-align: center
+
+	&__list
+		font-size: 2rem
+		font-weight: 600
+		padding-left: 9%

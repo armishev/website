@@ -1,0 +1,56 @@
+.product-card
+	background: rgba($color-white, .8)
+	border-radius: 0.5rem
+	box-shadow: $box-shadow
+	transition: all .3s
+	-webkit-backface-visibility: hidden
+	border: .1rem solid
+	height: 56vh
+	-webkit-perspective: 150rem
+	-moz-perspective: 150rem
+	position: relative
+	@include respond(tab-port)
+		margin: 3rem
+		height: 230px
+
+	@include respond(phone)
+		margin: 3rem
+		height: 45vh
+
+	&:hover
+		transform: translateY(-.7rem) scale(1.03)
+
+	&__img
+		background-blend-mode: hard-light
+		height: 80%
+		margin-bottom: 1.6rem
+		border-radius: 0.5rem
+
+		&_1
+			background: url(../img/glass-M1.png) center / cover no-repeat
+		&_2
+			background: url(../img/glass-CrystalVision.png) center / cover no-repeat
+		&_3
+			background: url(../img/glass-AGC.png) center / cover no-repeat
+		&_4
+			background: url(../img/glass-Matovoe.png) center / cover no-repeat
+		&_5
+			background: url(../img/glass-Riflenoe.png) center / cover no-repeat
+		&_6
+			background: url(../img/glass-Figure.png) center / cover no-repeat
+		&_7
+			background: url(../img/glass-Triplex.png) center / cover no-repeat
+		&_8
+			background: url(../img/glass-Grey.png) center / cover no-repeat
+		&_9
+			background: url(../img/glass-Bronze.png) center / cover no-repeat
+		&_10
+			background: url(../img/Mirror.png) center / cover no-repeat
+
+	&__title
+		font-size: 1.6rem
+		margin-bottom: 1vh
+		@include respond(phone)
+			font-size: 9px
+		letter-spacing: 0.2rem
+		text-align: center

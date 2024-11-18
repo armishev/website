@@ -1,0 +1,58 @@
+body
+	font-family: 'Roboto'
+	font-weight: 400
+	font-size: $font-size-paragraph
+	// color: $color-gray
+	letter-spacing: .2rem
+
+.title-first
+	color: $color-white
+	&__main
+		display: block
+		font-weight: 800
+		font-size: 10rem
+		line-height: 6rem
+		letter-spacing: 1rem
+		margin-bottom: 7rem
+
+.title-info
+	display: block
+	&__block
+		margin-bottom: 1rem
+		&_3
+			margin-bottom: 7rem
+	&__block__1
+		color: $color-white
+		font-size: 2rem
+		font-weight: 600
+	&__block__2
+		color: $color-white
+		font-size: 2rem
+		font-weight: 600
+	&__block__3
+		color: $color-white
+		font-size: 2rem
+		font-weight: 600
+
+[alt="телефон"]
+		height: 3rem
+[alt="адрес"]
+		height: 2.7rem
+[alt="часы"]
+		height: 2.7rem
+
+.title-second
+	font-size: 5rem
+	font-weight: 600
+	color: #004163
+
+.paragraph
+	font-size: 2.6rem
+	font-weight: normal
+	letter-spacing: 0.2rem
+	line-height: 140%
+	font-weight: 500
+	@include respond(tab-land)
+		font-size: 1.5rem
+	@include respond(miniphone)
+		font-size: 10px
